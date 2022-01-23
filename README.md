@@ -1,4 +1,4 @@
-#      <p align="center">𝑵𝒐𝒊𝒏𝒐𝒊 𝑴𝒖𝒔𝒊𝒄 𝑩𝒐𝒕 -𝑪𝑭𝑪 𝑩𝒐𝒕𝒔  </a></p>
+#      <p align="center"> 𝐁𝐇𝐀𝐓𝐀𝐊𝐓𝐈 𝐀𝐓𝐌𝐀 𝑴𝒖𝒔𝒊𝒄 𝑩𝒐𝒕 -𝑪𝑭𝑪 𝑩𝒐𝒕𝒔  </a></p>
 <p align="center">
 
 <p align="center"><a href="https://t.me/noinoi_bot"><img src="https://telegra.ph/file/35fb0b861cf3c93a02e47.jpg"></a></p>
@@ -48,7 +48,7 @@
 ## Heroku Deployment 💜
 The easy way to host this bot, deploy to Heroku, Change the app country to Europe (it will help to make the bot stable).
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/HYKO-XD/NOINOI-MUSIC)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://github.com/King98179253/musicatma.git)
 
 ## VPS Deployment 📡
 Get the best Quality of streaming performance by hosting it on VPS, here's the step's:
@@ -72,11 +72,10 @@ python3 main.py # run the bot.
 
 # Credits 💖
 
-- [Levina](https://github.com/levina-lab) ``Dev``
-- [heyaaman](https://github.com/heyaaman) ``supporter``
-- [phoenix](https://t.me/phoenixwarmed) ``network owner``
-- [Laky's](https://github.com/Laky-64) for [``py-tgcalls``](https://github.com/pytgcalls/pytgcalls)
-- [Dan](https://github.com/delivrance) for [``Pyrogram``](https://github.com/pyrogram)
+- [𝐀𝐓𝐌𝐀](https://github.com/King98179253) ``Dev``
+- [heyaaman](https://github.com/King98179253) ``supporter``
+- [𝐃𝐃𝐑𝐀𝐆𝐎𝐍](https://github.com/King98179253) ``network owner``
+)
 
 ### Support & Updates 🎑
 <a href="https://t.me/CFC_BOT_SUPPORT"><img src="https://img.shields.io/badge/Join-Group%20Support-blue.svg?style=for-the-badge&logo=Telegram"></a> <a href="https://t.me/BAZIGARXD"><img src="https://img.shields.io/badge/Join-Updates%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
