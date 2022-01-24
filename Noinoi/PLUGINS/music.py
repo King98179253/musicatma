@@ -47,9 +47,9 @@ async def play(c: Client, m: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("• Gʀᴏᴜᴘ", url=f"https://t.me/CFC_BOT_SUPPORT"),
+                InlineKeyboardButton("• Gʀᴏᴜᴘ", url=f"https://t.me/SUBHI_WORLD"),
                 InlineKeyboardButton(
-                    "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/BAZIGARXD"),
+                    "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/A_BUT/32"),
             ]
         ]
     )
@@ -83,7 +83,7 @@ async def play(c: Client, m: Message):
         b = await c.get_chat_member(chat_id, ubot)
         if b.status == "kicked":
             await m.reply_text(
-                f"@{ASSISTANT_NAME} **is banned in group** {m.chat.title}\n\n» **unban the userbot first if you want to use this bot.**"
+                f"@{ASSISTANT_NAME} **𝐢𝐬 𝐛𝐚𝐧𝐧𝐞𝐝 𝐢𝐧 𝐠𝐫𝐨𝐮𝐩** {m.chat.title}\n\n» **𝐮𝐧𝐛𝐚𝐧𝐭𝐡𝐞 𝐮𝐬𝐞𝐫𝐨𝐭 𝐟𝐢𝐫𝐬𝐭 𝐢𝐟 𝐲𝐨𝐮 𝐰𝐚𝐧𝐭 𝐭𝐨 𝐮𝐬𝐞 𝐭𝐡𝐢𝐬 𝐛𝐨𝐭🔥.**"
             )
             return
     except UserNotParticipant:
@@ -91,7 +91,7 @@ async def play(c: Client, m: Message):
             try:
                 await user.join_chat(m.chat.username)
             except Exception as e:
-                await m.reply_text(f"💬 **Assistant failed to join**\n\n**reason**: `{e}`")
+                await m.reply_text(f"💬 **𝐌𝐘 𝐀𝐒𝐒𝐈𝐒𝐓𝐀𝐍𝐓 𝐅𝐀𝐈𝐋𝐃 𝐓𝐎 𝐉𝐎𝐈𝐍 𝐓𝐇𝐈𝐒 𝐂𝐇𝐀𝐓**\n\n**reason**: `{e}`")
                 return
         else:
             try:
@@ -107,11 +107,11 @@ async def play(c: Client, m: Message):
                 pass
             except Exception as e:
                 return await m.reply_text(
-                    f"💬 **userbot failed to join**\n\n**reason**: `{e}`"
+                    f"💬 **𝐔𝐒𝐄𝐑 𝐁𝐎𝐓 𝐅𝐀𝐈𝐋𝐃 𝐓𝐎 𝐉𝐎𝐈𝐍 **\n\n**reason**: `{e}`"
                 )
     if replied:
         if replied.audio or replied.voice:
-            suhu = await replied.reply("📥 **Downloading audio...**")
+            suhu = await replied.reply("📥 **𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐈𝐍𝐆...**")
             dl = await replied.download()
             link = replied.link
             if replied.audio:
@@ -134,7 +134,7 @@ async def play(c: Client, m: Message):
                 )
             else:
              try:
-                await suhu.edit("🔄 **Connecting to vc...**")
+                await suhu.edit("🔄 **𝐂𝐎𝐍𝐍𝐄𝐂𝐓𝐈𝐍𝐆 𝐓𝐎 𝐕𝐂...**")
                 await call_py.join_group_call(
                     chat_id,
                     AudioPiped(
@@ -159,11 +159,11 @@ async def play(c: Client, m: Message):
                     "💬 reply to an **audio file** or **give something to search.**"
                 )
             else:
-                suhu = await c.send_message(chat_id, "🔍 **Searching...**")
+                suhu = await c.send_message(chat_id, "🔍")
                 query = m.text.split(None, 1)[1]
                 search = ytsearch(query)
                 if search == 0:
-                    await suhu.edit("💬 **no results found.**")
+                    await suhu.edit("💬 **𝐍𝐎 𝐑𝐄𝐒𝐔𝐋𝐓 𝐅𝐎𝐔𝐍𝐃.**")
                 else:
                     songname = search[0]
                     title = search[0]
@@ -192,7 +192,7 @@ async def play(c: Client, m: Message):
                             )
                         else:
                             try:
-                                await suhu.edit("🔄 **Connecting to vc...**")
+                                await suhu.edit("🔄 **𝐜𝐨𝐧𝐧𝐞𝐜𝐭𝐢𝐧𝐠 𝐭𝐨 𝐯𝐜...**")
                                 await call_py.join_group_call(
                                     chat_id,
                                     AudioPiped(
@@ -218,7 +218,7 @@ async def play(c: Client, m: Message):
                 "💬 **Reply to an audio file or give something to search.**"
             )
         else:
-            suhu = await c.send_message(chat_id, "🔍 **Searching...**")
+            suhu = await c.send_message(chat_id, "🔍 ")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             if search == 0:
