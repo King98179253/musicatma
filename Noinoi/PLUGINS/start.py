@@ -62,12 +62,12 @@ async def start_(client: Client, message: Message):
 """,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("📢 ᴜᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/{GROUP_SUPPORT}"),
-                InlineKeyboardButton("ꜱᴏᴜʀᴄᴇ", url="https://github.com/hyko-xd/noinoi-music"),
-                InlineKeyboardButton("✨ ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{UPDATES_CHANNEL}"),],
-                [InlineKeyboardButton("📚 ᴄᴏᴍᴍᴀɴᴅꜱ", callback_data="cbcmds"),
-                InlineKeyboardButton("❓ ꜱᴇᴛᴜᴘ", callback_data="cbsetup"),],
-                [InlineKeyboardButton(" ᴀᴅᴅ ᴍᴇᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true",)],
+                [InlineKeyboardButton("📢 𝐔𝐏𝐃𝐀𝐓𝐄", url=f"https://t.me/{GROUP_SUPPORT}"),
+                InlineKeyboardButton("𝐆𝐈𝐕𝐄 𝐌𝐄 𝐇𝐄𝐀𝐑𝐓💙", url="https://t.me/A_BUT/32"),
+                InlineKeyboardButton("✨ 𝐒𝐔𝐏𝐏𝐎𝐑𝐓,𝐒", url=f"https://t.me/{UPDATES_CHANNEL}"),],
+                [InlineKeyboardButton("📚 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒", callback_data="cbcmds"),
+                InlineKeyboardButton("❓𝐒𝐄𝐓𝐔𝐏", callback_data="cbsetup"),],
+                [InlineKeyboardButton("➕𝐊𝐈𝐃𝐃𝐍𝐄𝐏 𝐌𝐄➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true",)],
             ]
         ),
         disable_web_page_preview=True,
@@ -85,9 +85,9 @@ async def alive(client: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("✨ Group", url=f"https://t.me/{GROUP_SUPPORT}"),
+                InlineKeyboardButton("✨ 𝐆𝐑𝐎𝐔𝐏", url=f"https://t.me/{GROUP_SUPPORT}"),
                 InlineKeyboardButton(
-                    "📣 Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    "📣 𝐂𝐇𝐀𝐍𝐍𝐄𝐋", url=f"https://t.me/{UPDATES_CHANNEL}"
                 ),
             ]
         ]
@@ -107,7 +107,7 @@ async def ping_pong(client: Client, message: Message):
     start = time()
     m_reply = await message.reply_text("pinging...")
     delta_ping = time() - start
-    await m_reply.edit_text("🏓 `PONG!!`\n" f"⚡️ `{delta_ping * 1000:.3f} ms`")
+    await m_reply.edit_text("✨ `🇵 🇴 🇳 🇬 !!`\n" f"⚡️ `{delta_ping * 1000:.3f} ms`")
 
 
 @Client.on_message(command(["uptime", f"uptime@{BOT_USERNAME}"]) & ~filters.edited)
@@ -129,7 +129,7 @@ async def new_chat(c: Client, m: Message):
     for member in m.new_chat_members:
         if member.id == bot_id:
             return await m.reply(
-                "❤️ Thanks for adding me to the **Group** !\n\n"
+                "❤️ 𝐓𝐍𝐗 𝐅𝐎𝐑 𝐀𝐃𝐃𝐈𝐍𝐆 𝐌𝐄 𝐈𝐍 𝐘𝐎𝐔𝐑 **𝐆𝐑𝐎𝐔𝐏** !\n\n"
                 "Appoint me as administrator in the **Group**, otherwise I will not be able to work properly, and don't forget to type `/userbotjoin` for invite the assistant.\n\n"
                 "Once done, then type `/reload`",
                 reply_markup=InlineKeyboardMarkup(
